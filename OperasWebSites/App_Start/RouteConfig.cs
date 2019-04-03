@@ -5,13 +5,22 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace OperasWebSites
+namespace OperasWebSite
 {
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                name: "OperaByTitleRoute",
+                url: "opera/title/{title}",
+                defaults: new
+                {
+                    controller = "Opera",
+                    action = "DetailsByTitle"
+                });
 
             routes.MapRoute(
                 name: "Default",

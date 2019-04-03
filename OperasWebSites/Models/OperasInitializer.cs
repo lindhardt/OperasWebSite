@@ -4,10 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
-namespace OperasWebSites.Models
+namespace OperasWebSite.Models
 {
-    public class OperasInitializer
-        : DropCreateDatabaseAlways<OperasDB>
+    public class OperasInitializer : DropCreateDatabaseAlways<OperasDB>
     {
         protected override void Seed(OperasDB context)
         {
