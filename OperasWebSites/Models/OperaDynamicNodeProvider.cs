@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OperasWebSite.Models
+namespace OperasWebSites.Models
 {
     public class OperaDynamicNodeProvider : DynamicNodeProviderBase
     {

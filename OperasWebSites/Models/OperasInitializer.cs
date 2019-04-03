@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
-namespace OperasWebSite.Models
+namespace OperasWebSites.Models
 {
     public class OperasInitializer : DropCreateDatabaseAlways<OperasDB>
     {
